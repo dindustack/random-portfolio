@@ -1,4 +1,10 @@
-*{
+@font-face {
+    font-family: 'Raiderfont';
+    src: local('Raiderfont'), url('./fonts/Raiderfont.ttf') format('truetype');
+}
+
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -13,4 +19,22 @@ body {
 
 ul {
     list-style: none;
+}
+
+.left,
+.right {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    z-index: -1;
+}
+
+.left {
+    background: #B3B4AF;
+    left: 0%
+}
+
+.right {
+    background: #191921;
+    right: 0%
 }
